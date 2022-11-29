@@ -1,0 +1,53 @@
+[attr]lock filter=lfs diff=lfs merge=binary -text lockable
+[attr]lfs filter=lfs diff=lfs merge=lfs -text
+[attr]lfsbinary filter=lfs diff=lfs merge=binary -text
+[attr]lfstext filter=lfs diff=lfstext merge=text -text
+
+# Unreal Engine file types
+*.uasset lock
+*.umap lock
+*.locres lfsbinary
+*.locmeta lfsbinary
+*.upk lfs
+*.udk lfs
+
+# Binaries
+*.exe lfsbinary
+*.dll lfsbinary
+*.rcc lfsbinary
+
+# Sounds
+*.bank lfsbinary
+*.wav lfsbinary
+*.mp3 lfsbinary
+*.ogg lfsbinary
+*.flac lfsbinary
+
+# Images & Icons
+*.png lfs
+*.jpg lfs
+*.tif lfs
+*.tga lfs
+*.raw lfs
+*.psd lfs
+*.ico lfs
+*.icns lfs
+*.hdr lfs
+*.cubemap lfs
+
+# Movies
+*.bk2 lfs
+*.mov lfs
+*.mp4 lfs
+*.gif lfs
+
+# 3D
+*.mb lfs
+*.duf lfs
+*.fbx lfs
+*.bin.fbx lfs
+
+# Other
+*.csv lfs
+*.dylib lfs
+*.so lfs
